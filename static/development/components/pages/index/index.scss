@@ -1,0 +1,346 @@
+.status_messenger {
+    &_section {
+        position: relative;
+        padding: 20vh 0px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    &_profile {
+        margin: 20px 0;
+        border-radius: 4px;
+        padding: 20px;
+        border: 1px solid #8DA2B5;
+    }
+    &_top_info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 15px;
+    }
+    &_btn {
+        position: relative;
+        cursor: pointer;
+        border: 1px solid #8DA2B5;
+        width: 16px;
+        height: 16px;
+        margin-right: 15px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 80%;
+            height: 1px;
+            background: #8DA2B5;
+            transform: translate(-50%, -50%);
+        }
+        &:before {
+            transition: all .2s;
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 1px;
+            height: 80%;
+            background: #8DA2B5;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &_title__block {
+        display: flex;
+        align-items: center;
+    }
+    &_hint {
+        transition: all .2s;
+        position: absolute;
+        top: -40px;
+        left: 0%;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-50%);
+        padding: 5px 10px;
+        border-radius: 4px;
+        background: #637280;
+        color: #fff;
+
+        &:before {
+            content: ''; 
+            position: absolute;
+            bottom: -80%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 20px solid transparent; 
+            border-top: 20px solid #637280;
+            z-index: -1;
+        }
+    }
+     
+    &_question {
+        position: relative;
+        margin-left: 10px;
+        svg {
+            transition: all .2s;
+            cursor: pointer;
+            color: #637280;
+            display: block;
+            width: 15px;
+            height: 15px;
+            transform: scale(1);
+        }
+
+
+        &:hover {
+            svg {
+                transform: scale(1.1);
+            }
+            .status_messenger_hint {
+                opacity: 1;
+                visibility: visible;
+                left: 50%;
+            }
+        }
+    }
+    &_information__block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        opacity: .8;
+        padding-top: 15px;
+    }
+    &_information_line {
+        width: 30%;
+        height: 1px;
+        background: #637280;
+        opacity: .8;
+    }
+    &_uptime {
+        min-width: 150px;
+        text-align: center;
+        padding: 0px 10px;
+    }
+    &_date, &_day {
+        padding: 0px 10px;
+        text-align: center;
+        opacity: 0.6;
+        min-width: 150px;
+    }
+    &_indicator__block {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    &_indicator {
+        transition: all .2s;
+        cursor: pointer;
+        border-right: solid 2px #fff;
+        border-left: solid 2px #fff;
+        height: 34px;
+        width: 3px;
+        
+        opacity: 0.7;
+
+        &:hover {
+            opacity: 1;
+        }
+        &.animation {
+            opacity: 1;
+        }
+    }
+
+
+
+    &_popup {
+        &__block {
+            transition: all .2s;
+            position: absolute;
+            top: 52px;
+            visibility: hidden;
+            opacity: 0;
+            left: 0;
+            min-width: 380px;
+            z-index: 9;
+            border: 1px solid #E0E0E0;
+            border-radius: 4px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+            background: #fff;
+            padding: 15px;
+
+            &_arrow {
+                transition: all .2s;
+                position: absolute;
+                top: -13px;
+                left: calc(50% + 2px);
+                width: 25px;
+                height: 25px;
+                z-index: 1;
+                border: 1px solid #E0E0E0;
+                transform: translateX(-50%) rotate(45deg);
+                background-color: #fff;
+                border-right: 1px solid transparent;
+                border-bottom: 1px solid transparent;
+
+            }
+
+            &_absolute_arrow {
+                display: none;
+                transition: all .2s;
+                position: absolute;
+                top: 40px;
+                left: calc(50% + 4px);
+                width: 25px;
+                height: 25px;
+                z-index: 9;
+                border: 1px solid #E0E0E0;
+                transform: translateX(-50%) rotate(45deg);
+                background-color: #fff;
+                border-right: 1px solid transparent;
+                border-bottom: 1px solid transparent;
+
+
+                &.hiden {
+                    visibility: hidden;
+                    opacity: 0;
+                }
+            }
+
+            &.active {
+                visibility: visible;
+                opacity: 1;
+            }
+            &.good {
+                .status_messenger_popup_error__block {
+                    display: none;
+                }
+            }
+            &.normal {
+                .status_messenger_popup_error_bad {
+                    display: none;
+                }
+            }
+            &.bad {
+                .status_messenger_popup_error_normal {
+                    display: none;
+                }
+            }
+
+           
+        }
+        &_error {
+            &__block {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                background: whitesmoke;
+                border-radius: 4px;
+                margin: 10px 0;
+            }
+           
+            &_svg {
+                position: relative;
+                width: 15px;
+                height: 15px;
+                margin-right: 15px;
+               img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                   width: 100%;
+                   height: 100%;
+               }
+            }
+            &_hours__block, &_minutes__block {
+                margin-left: 15px;
+                min-width: 50px;
+            }
+            &_title {
+                min-width: 130px;
+            }
+        }
+
+        &_title {
+            text-transform: uppercase;
+        }
+        
+      
+    }
+
+    &_profile__wrapper {
+        display: none;
+    }
+    &_optional {
+        border: 1px solid rgb(141, 162, 181);
+        border-radius: 4px;
+        padding: 20px;
+
+       
+        &.show {
+            .status_messenger_profile__wrapper {
+                display: block;
+            }
+            .status_messenger_btn:before {
+                height: 0%;
+            }
+        }
+        .status_messenger_profile__wrapper {
+            margin-top: 25px;
+            .status_messenger_profile {
+                padding: 0px 20px;
+            }
+        }
+        .status_messenger_profile {
+            margin: 0;
+            border: none;
+            padding: 0;
+           
+        }
+    }
+    
+   
+}
+
+
+@media (max-width: 700px) {
+    .status_messenger_information_line {
+        display: none;
+    }
+    .status_messenger_date, .status_messenger_day {
+        min-width: unset;
+    }
+    .status_messenger_uptime {
+        min-width: unset;
+    }
+}
+
+@media (max-width: 490px) {
+    .status_messenger_popup__block {
+        min-width: unset;
+        width: 100% !important;
+        left: 0 !important;
+    }
+    .status_messenger_popup_error__block {
+        flex-direction: column;
+        align-items: flex-start;
+    
+    }
+    .status_messenger_popup_error_hours__block, .status_messenger_popup_error_minutes__block {
+        margin: 0;
+    }
+    .status_messenger_optional {
+        padding: 10px;
+    }
+    .status_messenger_profile {
+        padding: 10px;
+    }
+    .status_messenger_optional .status_messenger_profile__wrapper .status_messenger_profile {
+        padding: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .status_messenger_top_info {
+        flex-direction: column;
+    }
+}
