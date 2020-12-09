@@ -18,7 +18,7 @@ function create_status_messenger({ block, indicator }) {
 }
 
 
-function add_content_in_popup({ popup, status, date, title, text, error_name, error_minute, error_hour }) {
+function add_content_in_popup({ popup, status, date, title, text, error_name, error_minute, error_hour, error_link }) {
   $(popup).find('.status_messenger_popup__block').removeClass('bad');
   $(popup).find('.status_messenger_popup__block').removeClass('normal');
   $(popup).find('.status_messenger_popup__block').removeClass('good');
@@ -29,7 +29,25 @@ function add_content_in_popup({ popup, status, date, title, text, error_name, er
   $(popup).find('.status_messenger_popup_error_title').text(error_name);
   $(popup).find('.status_messenger_popup_error_minutes').text(error_minute);
   $(popup).find('.status_messenger_popup_error_hours').text(error_hour);
+
+  $('.popup_error_link').remove();
+  error_link.map((index, name) => {
+    $(popup).find('.status_messenger_popup__block')[0].appendChild(create_error_link($(name).val(), $(name).attr('data-href')));
+  });
+
 }
+
+
+function create_error_link(text, href) {
+  let popup_error_link = document.createElement('a');
+  popup_error_link.classList.add('popup_error_link', 'sub_title', 'sub_title_0', 'color_black');
+  popup_error_link.setAttribute(`href`, href);
+  popup_error_link.setAttribute(`target`, '_blank');
+  popup_error_link.textContent = text;
+
+  return popup_error_link;
+}
+
 
 $('.status_messenger_indicator').on('mouseover', function () {
   let absolute_arrow = $(this).parents('.status_messenger_indicator__block').find('.status_messenger_popup__block_absolute_arrow');
@@ -48,7 +66,6 @@ $('.status_messenger_indicator').on('mouseover', function () {
   let popup_right_border = position_indicator + popup_width;
 
   let arrow = $(popup).find('.status_messenger_popup__block_arrow');
-
 
   if (popup_left_border <= 0) {
     current_position_popup = '-10px';
@@ -82,6 +99,7 @@ $('.status_messenger_indicator').on('mouseover', function () {
     error_name: $(this).attr('data-error-name'),
     error_minute: $(this).attr('data-error-minute'),
     error_hour: $(this).attr('data-error-hour'),
+    error_link: $(this).find('.error_link'),
   })
 })
 
@@ -91,7 +109,19 @@ $('.status_messenger_btn').on('click', function () {
 });
 
 $('.status_messenger_indicator').on('mouseout', function () {
-
   $('.status_messenger_popup__block').removeClass('active');
   $('.status_messenger_popup__block_absolute_arrow').addClass('hidden');
+})
+
+$('.status_messenger_popup__block').on('mouseout', function () {
+  $('.status_messenger_popup__block').removeClass('active');
+  $('.status_messenger_popup__block_absolute_arrow').addClass('hidden');
+})
+
+$('.status_messenger_popup__block').on('mouseover', function () {
+  let popup = $(this).parents('.status_messenger_indicator__block').find('.status_messenger_popup__block');
+  let absolute_arrow = $(this).parents('.status_messenger_indicator__block').find('.status_messenger_popup__block_absolute_arrow');
+
+  $(absolute_arrow).removeClass('hidden');
+  $(popup).addClass('active');
 })

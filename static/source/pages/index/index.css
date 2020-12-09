@@ -719,12 +719,21 @@ main {
   opacity: 0;
   left: 0;
   min-width: 380px;
-  z-index: 9;
+  z-index: 10;
   border: 1px solid #E0E0E0;
   border-radius: 4px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
   background: #fff;
   padding: 15px; }
+  .status_messenger_popup__block:after {
+    content: '';
+    position: absolute;
+    top: -19px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    z-index: 10; }
   .status_messenger_popup__block_arrow {
     transition: all .2s;
     position: absolute;
@@ -741,6 +750,7 @@ main {
   .status_messenger_popup__block_absolute_arrow {
     display: none;
     transition: all .2s;
+    pointer-events: none;
     position: absolute;
     top: 40px;
     left: calc(50% + 4px);
@@ -814,6 +824,17 @@ main {
     margin: 0;
     border: none;
     padding: 0; }
+
+.popup_error_link {
+  transition: all .2s;
+  display: block;
+  margin: 5px 0;
+  padding-bottom: 3px;
+  border-bottom: 1px solid transparent;
+  width: -moz-fit-content;
+  width: fit-content; }
+  .popup_error_link:hover {
+    border-bottom: 1px solid #637280; }
 
 .status_content {
   margin-top: 60px;

@@ -234,7 +234,8 @@ function add_content_in_popup(_ref2) {
       text = _ref2.text,
       error_name = _ref2.error_name,
       error_minute = _ref2.error_minute,
-      error_hour = _ref2.error_hour;
+      error_hour = _ref2.error_hour,
+      error_link = _ref2.error_link;
   $(popup).find('.status_messenger_popup__block').removeClass('bad');
   $(popup).find('.status_messenger_popup__block').removeClass('normal');
   $(popup).find('.status_messenger_popup__block').removeClass('good');
@@ -245,6 +246,19 @@ function add_content_in_popup(_ref2) {
   $(popup).find('.status_messenger_popup_error_title').text(error_name);
   $(popup).find('.status_messenger_popup_error_minutes').text(error_minute);
   $(popup).find('.status_messenger_popup_error_hours').text(error_hour);
+  $('.popup_error_link').remove();
+  error_link.map(function (index, name) {
+    $(popup).find('.status_messenger_popup__block')[0].appendChild(create_error_link($(name).val(), $(name).attr('data-href')));
+  });
+}
+
+function create_error_link(text, href) {
+  var popup_error_link = document.createElement('a');
+  popup_error_link.classList.add('popup_error_link', 'sub_title', 'sub_title_0', 'color_black');
+  popup_error_link.setAttribute("href", href);
+  popup_error_link.setAttribute("target", '_blank');
+  popup_error_link.textContent = text;
+  return popup_error_link;
 }
 
 $('.status_messenger_indicator').on('mouseover', function () {
@@ -287,7 +301,8 @@ $('.status_messenger_indicator').on('mouseover', function () {
     text: $(this).attr('data-text'),
     error_name: $(this).attr('data-error-name'),
     error_minute: $(this).attr('data-error-minute'),
-    error_hour: $(this).attr('data-error-hour')
+    error_hour: $(this).attr('data-error-hour'),
+    error_link: $(this).find('.error_link')
   });
 });
 $('.status_messenger_btn').on('click', function () {
@@ -297,6 +312,16 @@ $('.status_messenger_btn').on('click', function () {
 $('.status_messenger_indicator').on('mouseout', function () {
   $('.status_messenger_popup__block').removeClass('active');
   $('.status_messenger_popup__block_absolute_arrow').addClass('hidden');
+});
+$('.status_messenger_popup__block').on('mouseout', function () {
+  $('.status_messenger_popup__block').removeClass('active');
+  $('.status_messenger_popup__block_absolute_arrow').addClass('hidden');
+});
+$('.status_messenger_popup__block').on('mouseover', function () {
+  var popup = $(this).parents('.status_messenger_indicator__block').find('.status_messenger_popup__block');
+  var absolute_arrow = $(this).parents('.status_messenger_indicator__block').find('.status_messenger_popup__block_absolute_arrow');
+  $(absolute_arrow).removeClass('hidden');
+  $(popup).addClass('active');
 });
 
 /***/ }),
