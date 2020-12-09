@@ -10,695 +10,799 @@
 </head>
 
 <body>
-
-  <section class="status_messenger_section">
-
-
-    <!-- полоска, а в ній можуть бути інші полоски -->
-    <div class="status_messenger_optional">
-      <div class="status_messenger_profile">
-        <div class="status_messenger_top_info">
-          <div class="status_messenger_title__block">
-            <div class="status_messenger_btn">
-            </div>
-            <div class="status_messenger_title standart_title standart_title_3 color_black">
-              Intercom Messenger
-            </div>
-            <div class="status_messenger_question">
-              <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="question-circle" role="img"
-                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                class="svg-inline--fa fa-question-circle fa-w-16 fa-2x">
-                <path fill="currentColor"
-                  d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"
-                  class=""></path>
-              </svg>
-              <div class="status_messenger_hint sub_title sub_title_0 color_white">
-                app.intercom.com
-              </div>
-            </div>
+  <div class="main_container">
+    <header class="header">
+      <div class="container">
+        <div style='background: #238ceb;' class="header_top__block">
+          <div class="header_img">
+            <img src="https://www.cmsjunkie.com/subdomains/test/sass-demo/img/conversation.svg" alt="">
           </div>
-          <div class="status_messenger_operational standart_title standart_title_3 color_green">
-            Operational
+          <div class="header_logo_name standart_title standart_title_5 color_white">
+            Status Messenger
           </div>
         </div>
-        <!-- style: #70ed8c (зелений), #de412c (червоний), #f5cc64 (жовтий) -->
-        <!-- data-date: текстове поле -->
-        <!-- data-status: bad, normal, good -->
-        <!-- data-error-name: текстове поле -->
-        <!-- data-hour: текстове поле -->
-        <!-- data-minute: текстове поле -->
-        <!-- data-title: текстове поле -->
-        <!-- data-text: текстове поле -->
-
-        <div class="status_messenger_indicator__block">
-          <div style='background: #70ed8c;' data-date='22 Oct 2022' data-status='bad'
-            data-error-name='Partialqwe outage' data-error-hour='1' data-error-minute='10' data-title='relateded'
-            data-text='No 1downtime decorded on this day' class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div style='background: #de412c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='bad'
-            class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div style='background: #f5cc64;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020'
-            data-status='normal' class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-            data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-            class="status_messenger_indicator"></div>
-          <div class="status_messenger_popup__block normal">
-            <div class="status_messenger_popup__block_arrow"></div>
-            <div class="status_messenger_popup_date medium_title medium_title_2 color_black">
-              7 Oct 2020
-            </div>
-            <div class="status_messenger_popup_error__block">
-              <div class="status_messenger_popup_error_svg">
-                <img class="status_messenger_popup_error_normal" src="./static/source/img/normal.svg" alt="">
-                <img class="status_messenger_popup_error_bad" src="./static/source/img/bad.svg" alt="">
-              </div>
-              <div class="status_messenger_popup_error_title standart_title standart_title_2 color_black">
-                Partial outage
-              </div>
-              <div class="status_messenger_popup_error_hours__block standart_title standart_title_2 color_black">
-                <span class="status_messenger_popup_error_hours">1</span>
-                hrs
-              </div>
-              <div class="status_messenger_popup_error_minutes__block standart_title standart_title_2 color_black">
-                <span class="status_messenger_popup_error_minutes">20</span>
-                mins
-              </div>
-            </div>
-            <div class="status_messenger_popup_title medium_title medium_title_2 color_black">
-              related
-            </div>
-            <div class="status_messenger_popup_text sub_title sub_title_0 color_black">
-              No downtime decorded on this day lorem100
-            </div>
+        <div style='background: rgba(0,0,0,0.8);' class="header_bottom__block">
+          <div class="header_title main__title main__title_5 color_white">
+            System Status
           </div>
-          <div class="status_messenger_popup__block_absolute_arrow"></div>
-        </div>
-        <div class="status_messenger_information__block">
-          <div class="status_messenger_date medium_title medium_title_2 color_black">
-            90 days ago
-          </div>
-          <div class="status_messenger_information_line"></div>
-          <div class="status_messenger_uptime medium_title medium_title_2 color_black">
-            100.0 % uptime
-          </div>
-          <div class="status_messenger_information_line"></div>
-          <div class="status_messenger_day medium_title medium_title_2 color_black">
-            Today
+          <div style='background: #238ceb;' class="standart_btn">
+            Login
           </div>
         </div>
       </div>
-      <div class="status_messenger_profile__wrapper">
-        <div class="status_messenger_profile">
-          <div class="status_messenger_top_info">
-            <div class="status_messenger_title__block">
-              <div class="status_messenger_title standart_title standart_title_3 color_black">
-                Intercom Messenger
-              </div>
-              <div class="status_messenger_question">
-                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="question-circle" role="img"
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                  class="svg-inline--fa fa-question-circle fa-w-16 fa-2x">
-                  <path fill="currentColor"
-                    d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"
-                    class=""></path>
-                </svg>
-                <div class="status_messenger_hint sub_title sub_title_0 color_white">
-                  app.intercom.com
-                </div>
-              </div>
-            </div>
-            <div class="status_messenger_operational standart_title standart_title_3 color_green">
-              Operational
-            </div>
-          </div>
-          <!-- style: #70ed8c (зелений), #de412c (червоний), #f5cc64 (жовтий) -->
-          <!-- data-date: текстове поле -->
-          <!-- data-status: bad, normal, good -->
-          <!-- data-error-name: текстове поле -->
-          <!-- data-hour: текстове поле -->
-          <!-- data-minute: текстове поле -->
-          <!-- data-title: текстове поле -->
-          <!-- data-text: текстове поле -->
+      <!-- /.container -->
+    </header>
+    <!-- /.header -->
 
-          <div class="status_messenger_indicator__block">
-            <div style='background: #70ed8c;' data-date='22 Oct 2022' data-status='bad'
-              data-error-name='Partialqwe outage' data-error-hour='1' data-error-minute='10' data-title='relateded'
-              data-text='No 1downtime decorded on this day' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #de412c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='bad' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #f5cc64;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='normal' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div class="status_messenger_popup__block normal">
-              <div class="status_messenger_popup__block_arrow"></div>
-              <div class="status_messenger_popup_date medium_title medium_title_2 color_black">
-                7 Oct 2020
-              </div>
-              <div class="status_messenger_popup_error__block">
-                <div class="status_messenger_popup_error_svg">
-                  <img class="status_messenger_popup_error_normal" src="./static/source/img/normal.svg" alt="">
-                  <img class="status_messenger_popup_error_bad" src="./static/source/img/bad.svg" alt="">
-                </div>
-                <div class="status_messenger_popup_error_title standart_title standart_title_2 color_black">
-                  Partial outage
-                </div>
-                <div class="status_messenger_popup_error_hours__block standart_title standart_title_2 color_black">
-                  <span class="status_messenger_popup_error_hours">1</span>
-                  hrs
-                </div>
-                <div class="status_messenger_popup_error_minutes__block standart_title standart_title_2 color_black">
-                  <span class="status_messenger_popup_error_minutes">20</span>
-                  mins
-                </div>
-              </div>
-              <div class="status_messenger_popup_title medium_title medium_title_2 color_black">
-                related
-              </div>
-              <div class="status_messenger_popup_text sub_title sub_title_0 color_black">
-                No downtime decorded on this day lorem100
-              </div>
-            </div>
-            <div class="status_messenger_popup__block_absolute_arrow"></div>
+    <section class="status_content">
+      <div class="container">
+        <div style='background: #00eb8b;' class="status_content_title standart_title standart_title_4 color_white">
+          All Systems Operational
+        </div>
+
+        <div class="status_content_about__block">
+          <div class="status_content_about_title medium_title medium_title_4 color_black">
+            About This Site
           </div>
-          <div class="status_messenger_information__block">
-            <div class="status_messenger_date medium_title medium_title_2 color_black">
-              90 days ago
-            </div>
-            <div class="status_messenger_information_line"></div>
-            <div class="status_messenger_uptime medium_title medium_title_2 color_black">
-              100.0 % uptime
-            </div>
-            <div class="status_messenger_information_line"></div>
-            <div class="status_messenger_day medium_title medium_title_2 color_black">
-              Today
-            </div>
+          <div class="status_content_about_text sub_title sub_title_2 color_black">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quae nam maxime corporis minus. Veniam fuga
+            fugiat officiis assumenda alias temporibus similique quo aperiam. Dolorum optio non, vitae, iste corrupti
+            voluptate cumque vel enim voluptas eligendi esse rerum odit, eum commodi deserunt quos consequatur
+            provident! Itaque reiciendis vel ea optio?
+          </div>
+          <div class="status_content_about_text sub_title sub_title_2 color_black">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quae nam maxime corporis minus. Veniam fuga
+            fugiat officiis assumenda alias temporibus similique quo aperiam. Dolorum optio non, vitae, iste corrupti
+            voluptate cumque vel enim voluptas eligendi esse rerum odit, eum commodi deserunt quos consequatur
+            provident! Itaque reiciendis vel ea optio?
           </div>
         </div>
-        <div class="status_messenger_profile">
-          <div class="status_messenger_top_info">
-            <div class="status_messenger_title__block">
-              <div class="status_messenger_title standart_title standart_title_3 color_black">
-                Intercom Messenger
-              </div>
-              <div class="status_messenger_question">
-                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="question-circle" role="img"
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                  class="svg-inline--fa fa-question-circle fa-w-16 fa-2x">
-                  <path fill="currentColor"
-                    d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"
-                    class=""></path>
-                </svg>
-                <div class="status_messenger_hint sub_title sub_title_0 color_white">
-                  app.intercom.com
+        <div class="status_messenger_section">
+          <div class="container">
+            <!-- полоска, а в ній можуть бути інші полоски -->
+            <div class="status_messenger_optional">
+              <div class="status_messenger_profile">
+                <div class="status_messenger_top_info">
+                  <div class="status_messenger_title__block">
+                    <div class="status_messenger_btn">
+                    </div>
+                    <div class="status_messenger_title standart_title standart_title_3 color_black">
+                      Intercom Messenger
+                    </div>
+                    <div class="status_messenger_question">
+                      <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="question-circle" role="img"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                        class="svg-inline--fa fa-question-circle fa-w-16 fa-2x">
+                        <path fill="currentColor"
+                          d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"
+                          class=""></path>
+                      </svg>
+                      <div class="status_messenger_hint sub_title sub_title_0 color_white">
+                        app.intercom.com
+                      </div>
+                    </div>
+                  </div>
+                  <div class="status_messenger_operational standart_title standart_title_3 color_green">
+                    Operational
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="status_messenger_operational standart_title standart_title_3 color_green">
-              Operational
-            </div>
-          </div>
-          <!-- style: #70ed8c (зелений), #de412c (червоний), #f5cc64 (жовтий) -->
-          <!-- data-date: текстове поле -->
-          <!-- data-status: bad, normal, good -->
-          <!-- data-error-name: текстове поле -->
-          <!-- data-hour: текстове поле -->
-          <!-- data-minute: текстове поле -->
-          <!-- data-title: текстове поле -->
-          <!-- data-text: текстове поле -->
+                <!-- style: #70ed8c (зелений), #de412c (червоний), #f5cc64 (жовтий) -->
+                <!-- data-date: текстове поле -->
+                <!-- data-status: bad, normal, good -->
+                <!-- data-error-name: текстове поле -->
+                <!-- data-hour: текстове поле -->
+                <!-- data-minute: текстове поле -->
+                <!-- data-title: текстове поле -->
+                <!-- data-text: текстове поле -->
 
-          <div class="status_messenger_indicator__block">
-            <div style='background: #70ed8c;' data-date='22 Oct 2022' data-status='bad'
-              data-error-name='Partialqwe outage' data-error-hour='1' data-error-minute='10' data-title='relateded'
-              data-text='No 1downtime decorded on this day' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #de412c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='bad' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #f5cc64;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='normal' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
-              data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
-              data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
-            <div class="status_messenger_popup__block normal">
-              <div class="status_messenger_popup__block_arrow"></div>
-              <div class="status_messenger_popup_date medium_title medium_title_2 color_black">
-                7 Oct 2020
+                <div class="status_messenger_indicator__block">
+                  <div style='background: #70ed8c;' data-date='22 Oct 2022' data-status='bad'
+                    data-error-name='Partialqwe outage' data-error-hour='1' data-error-minute='10'
+                    data-title='relateded' data-text='No 1downtime decorded on this day'
+                    class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div style='background: #de412c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='bad' class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div style='background: #f5cc64;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='normal' class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                    data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                    data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                  <div class="status_messenger_popup__block normal">
+                    <div class="status_messenger_popup__block_arrow"></div>
+                    <div class="status_messenger_popup_date medium_title medium_title_2 color_black">
+                      7 Oct 2020
+                    </div>
+                    <div class="status_messenger_popup_error__block">
+                      <div class="status_messenger_popup_error_svg">
+                        <img class="status_messenger_popup_error_normal" src="./static/source/img/normal.svg" alt="">
+                        <img class="status_messenger_popup_error_bad" src="./static/source/img/bad.svg" alt="">
+                      </div>
+                      <div class="status_messenger_popup_error_title standart_title standart_title_2 color_black">
+                        Partial outage
+                      </div>
+                      <div
+                        class="status_messenger_popup_error_hours__block standart_title standart_title_2 color_black">
+                        <span class="status_messenger_popup_error_hours">1</span>
+                        hrs
+                      </div>
+                      <div
+                        class="status_messenger_popup_error_minutes__block standart_title standart_title_2 color_black">
+                        <span class="status_messenger_popup_error_minutes">20</span>
+                        mins
+                      </div>
+                    </div>
+                    <div class="status_messenger_popup_title medium_title medium_title_2 color_black">
+                      related
+                    </div>
+                    <div class="status_messenger_popup_text sub_title sub_title_0 color_black">
+                      No downtime decorded on this day lorem100
+                    </div>
+                  </div>
+                  <div class="status_messenger_popup__block_absolute_arrow"></div>
+                </div>
+                <div class="status_messenger_information__block">
+                  <div class="status_messenger_date medium_title medium_title_2 color_black">
+                    90 days ago
+                  </div>
+                  <div class="status_messenger_information_line"></div>
+                  <div class="status_messenger_uptime medium_title medium_title_2 color_black">
+                    100.0 % uptime
+                  </div>
+                  <div class="status_messenger_information_line"></div>
+                  <div class="status_messenger_day medium_title medium_title_2 color_black">
+                    Today
+                  </div>
+                </div>
               </div>
-              <div class="status_messenger_popup_error__block">
-                <div class="status_messenger_popup_error_svg">
-                  <img class="status_messenger_popup_error_normal" src="./static/source/img/normal.svg" alt="">
-                  <img class="status_messenger_popup_error_bad" src="./static/source/img/bad.svg" alt="">
+              <div class="status_messenger_profile__wrapper">
+                <div class="status_messenger_profile">
+                  <div class="status_messenger_top_info">
+                    <div class="status_messenger_title__block">
+                      <div class="status_messenger_title standart_title standart_title_3 color_black">
+                        Intercom Messenger
+                      </div>
+                      <div class="status_messenger_question">
+                        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="question-circle"
+                          role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                          class="svg-inline--fa fa-question-circle fa-w-16 fa-2x">
+                          <path fill="currentColor"
+                            d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"
+                            class=""></path>
+                        </svg>
+                        <div class="status_messenger_hint sub_title sub_title_0 color_white">
+                          app.intercom.com
+                        </div>
+                      </div>
+                    </div>
+                    <div class="status_messenger_operational standart_title standart_title_3 color_green">
+                      Operational
+                    </div>
+                  </div>
+                  <!-- style: #70ed8c (зелений), #de412c (червоний), #f5cc64 (жовтий) -->
+                  <!-- data-date: текстове поле -->
+                  <!-- data-status: bad, normal, good -->
+                  <!-- data-error-name: текстове поле -->
+                  <!-- data-hour: текстове поле -->
+                  <!-- data-minute: текстове поле -->
+                  <!-- data-title: текстове поле -->
+                  <!-- data-text: текстове поле -->
+
+                  <div class="status_messenger_indicator__block">
+                    <div style='background: #70ed8c;' data-date='22 Oct 2022' data-status='bad'
+                      data-error-name='Partialqwe outage' data-error-hour='1' data-error-minute='10'
+                      data-title='relateded' data-text='No 1downtime decorded on this day'
+                      class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #de412c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='bad' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #f5cc64;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='normal' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div class="status_messenger_popup__block normal">
+                      <div class="status_messenger_popup__block_arrow"></div>
+                      <div class="status_messenger_popup_date medium_title medium_title_2 color_black">
+                        7 Oct 2020
+                      </div>
+                      <div class="status_messenger_popup_error__block">
+                        <div class="status_messenger_popup_error_svg">
+                          <img class="status_messenger_popup_error_normal" src="./static/source/img/normal.svg" alt="">
+                          <img class="status_messenger_popup_error_bad" src="./static/source/img/bad.svg" alt="">
+                        </div>
+                        <div class="status_messenger_popup_error_title standart_title standart_title_2 color_black">
+                          Partial outage
+                        </div>
+                        <div
+                          class="status_messenger_popup_error_hours__block standart_title standart_title_2 color_black">
+                          <span class="status_messenger_popup_error_hours">1</span>
+                          hrs
+                        </div>
+                        <div
+                          class="status_messenger_popup_error_minutes__block standart_title standart_title_2 color_black">
+                          <span class="status_messenger_popup_error_minutes">20</span>
+                          mins
+                        </div>
+                      </div>
+                      <div class="status_messenger_popup_title medium_title medium_title_2 color_black">
+                        related
+                      </div>
+                      <div class="status_messenger_popup_text sub_title sub_title_0 color_black">
+                        No downtime decorded on this day lorem100
+                      </div>
+                    </div>
+                    <div class="status_messenger_popup__block_absolute_arrow"></div>
+                  </div>
+                  <div class="status_messenger_information__block">
+                    <div class="status_messenger_date medium_title medium_title_2 color_black">
+                      90 days ago
+                    </div>
+                    <div class="status_messenger_information_line"></div>
+                    <div class="status_messenger_uptime medium_title medium_title_2 color_black">
+                      100.0 % uptime
+                    </div>
+                    <div class="status_messenger_information_line"></div>
+                    <div class="status_messenger_day medium_title medium_title_2 color_black">
+                      Today
+                    </div>
+                  </div>
                 </div>
-                <div class="status_messenger_popup_error_title standart_title standart_title_2 color_black">
-                  Partial outage
+                <div class="status_messenger_profile">
+                  <div class="status_messenger_top_info">
+                    <div class="status_messenger_title__block">
+                      <div class="status_messenger_title standart_title standart_title_3 color_black">
+                        Intercom Messenger
+                      </div>
+                      <div class="status_messenger_question">
+                        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="question-circle"
+                          role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                          class="svg-inline--fa fa-question-circle fa-w-16 fa-2x">
+                          <path fill="currentColor"
+                            d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"
+                            class=""></path>
+                        </svg>
+                        <div class="status_messenger_hint sub_title sub_title_0 color_white">
+                          app.intercom.com
+                        </div>
+                      </div>
+                    </div>
+                    <div class="status_messenger_operational standart_title standart_title_3 color_green">
+                      Operational
+                    </div>
+                  </div>
+                  <!-- style: #70ed8c (зелений), #de412c (червоний), #f5cc64 (жовтий) -->
+                  <!-- data-date: текстове поле -->
+                  <!-- data-status: bad, normal, good -->
+                  <!-- data-error-name: текстове поле -->
+                  <!-- data-hour: текстове поле -->
+                  <!-- data-minute: текстове поле -->
+                  <!-- data-title: текстове поле -->
+                  <!-- data-text: текстове поле -->
+
+                  <div class="status_messenger_indicator__block">
+                    <div style='background: #70ed8c;' data-date='22 Oct 2022' data-status='bad'
+                      data-error-name='Partialqwe outage' data-error-hour='1' data-error-minute='10'
+                      data-title='relateded' data-text='No 1downtime decorded on this day'
+                      class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #de412c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='bad' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #f5cc64;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='normal' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                      data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                      data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                    <div class="status_messenger_popup__block normal">
+                      <div class="status_messenger_popup__block_arrow"></div>
+                      <div class="status_messenger_popup_date medium_title medium_title_2 color_black">
+                        7 Oct 2020
+                      </div>
+                      <div class="status_messenger_popup_error__block">
+                        <div class="status_messenger_popup_error_svg">
+                          <img class="status_messenger_popup_error_normal" src="./static/source/img/normal.svg" alt="">
+                          <img class="status_messenger_popup_error_bad" src="./static/source/img/bad.svg" alt="">
+                        </div>
+                        <div class="status_messenger_popup_error_title standart_title standart_title_2 color_black">
+                          Partial outage
+                        </div>
+                        <div
+                          class="status_messenger_popup_error_hours__block standart_title standart_title_2 color_black">
+                          <span class="status_messenger_popup_error_hours">1</span>
+                          hrs
+                        </div>
+                        <div
+                          class="status_messenger_popup_error_minutes__block standart_title standart_title_2 color_black">
+                          <span class="status_messenger_popup_error_minutes">20</span>
+                          mins
+                        </div>
+                      </div>
+                      <div class="status_messenger_popup_title medium_title medium_title_2 color_black">
+                        related
+                      </div>
+                      <div class="status_messenger_popup_text sub_title sub_title_0 color_black">
+                        No downtime decorded on this day lorem100
+                      </div>
+                    </div>
+                    <div class="status_messenger_popup__block_absolute_arrow"></div>
+                  </div>
+                  <div class="status_messenger_information__block">
+                    <div class="status_messenger_date medium_title medium_title_2 color_black">
+                      90 days ago
+                    </div>
+                    <div class="status_messenger_information_line"></div>
+                    <div class="status_messenger_uptime medium_title medium_title_2 color_black">
+                      100.0 % uptime
+                    </div>
+                    <div class="status_messenger_information_line"></div>
+                    <div class="status_messenger_day medium_title medium_title_2 color_black">
+                      Today
+                    </div>
+                  </div>
                 </div>
-                <div class="status_messenger_popup_error_hours__block standart_title standart_title_2 color_black">
-                  <span class="status_messenger_popup_error_hours">1</span>
-                  hrs
-                </div>
-                <div class="status_messenger_popup_error_minutes__block standart_title standart_title_2 color_black">
-                  <span class="status_messenger_popup_error_minutes">20</span>
-                  mins
-                </div>
-              </div>
-              <div class="status_messenger_popup_title medium_title medium_title_2 color_black">
-                related
-              </div>
-              <div class="status_messenger_popup_text sub_title sub_title_0 color_black">
-                No downtime decorded on this day lorem100
               </div>
             </div>
-            <div class="status_messenger_popup__block_absolute_arrow"></div>
+            <!-- звичайна полоска -->
+            <div class="status_messenger_profile">
+              <div class="status_messenger_top_info">
+                <div class="status_messenger_title__block">
+                  <div class="status_messenger_title standart_title standart_title_3 color_black">
+                    Intercom Messenger
+                  </div>
+                  <div class="status_messenger_question">
+                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="question-circle" role="img"
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                      class="svg-inline--fa fa-question-circle fa-w-16 fa-2x">
+                      <path fill="currentColor"
+                        d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"
+                        class=""></path>
+                    </svg>
+                    <div class="status_messenger_hint sub_title sub_title_0 color_white">
+                      app.intercom.com
+                    </div>
+                  </div>
+                </div>
+                <div class="status_messenger_operational standart_title standart_title_3 color_green">
+                  Operational
+                </div>
+              </div>
+              <!-- style: #70ed8c (зелений), #de412c (червоний), #f5cc64 (жовтий) -->
+              <!-- data-date: текстове поле -->
+              <!-- data-status: bad, normal, good -->
+              <!-- data-error-name: текстове поле -->
+              <!-- data-hour: текстове поле -->
+              <!-- data-minute: текстове поле -->
+              <!-- data-title: текстове поле -->
+              <!-- data-text: текстове поле -->
+
+              <div class="status_messenger_indicator__block">
+                <div style='background: #70ed8c;' data-date='22 Oct 2022' data-status='bad'
+                  data-error-name='Partialqwe outage' data-error-hour='1' data-error-minute='10' data-title='relateded'
+                  data-text='No 1downtime decorded on this day' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div style='background: #de412c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='bad' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div style='background: #f5cc64;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='normal' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20'
+                  data-error-name='Partial outage' data-text='No downtime decorded on this day' data-title='related'
+                  data-date='7 Oct 2020' data-status='good' class="status_messenger_indicator"></div>
+                <div class="status_messenger_popup__block normal">
+                  <div class="status_messenger_popup__block_arrow"></div>
+                  <div class="status_messenger_popup_date medium_title medium_title_2 color_black">
+                    7 Oct 2020
+                  </div>
+                  <div class="status_messenger_popup_error__block">
+                    <div class="status_messenger_popup_error_svg">
+                      <img class="status_messenger_popup_error_normal" src="./static/source/img/normal.svg" alt="">
+                      <img class="status_messenger_popup_error_bad" src="./static/source/img/bad.svg" alt="">
+                    </div>
+                    <div class="status_messenger_popup_error_title standart_title standart_title_2 color_black">
+                      Partial outage
+                    </div>
+                    <div class="status_messenger_popup_error_hours__block standart_title standart_title_2 color_black">
+                      <span class="status_messenger_popup_error_hours">1</span>
+                      hrs
+                    </div>
+                    <div
+                      class="status_messenger_popup_error_minutes__block standart_title standart_title_2 color_black">
+                      <span class="status_messenger_popup_error_minutes">20</span>
+                      mins
+                    </div>
+                  </div>
+                  <div class="status_messenger_popup_title medium_title medium_title_2 color_black">
+                    related
+                  </div>
+                  <div class="status_messenger_popup_text sub_title sub_title_0 color_black">
+                    No downtime decorded on this day lorem100
+                  </div>
+                </div>
+                <div class="status_messenger_popup__block_absolute_arrow"></div>
+              </div>
+              <div class="status_messenger_information__block">
+                <div class="status_messenger_date medium_title medium_title_2 color_black">
+                  90 days ago
+                </div>
+                <div class="status_messenger_information_line"></div>
+                <div class="status_messenger_uptime medium_title medium_title_2 color_black">
+                  100.0 % uptime
+                </div>
+                <div class="status_messenger_information_line"></div>
+                <div class="status_messenger_day medium_title medium_title_2 color_black">
+                  Today
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="status_messenger_information__block">
-            <div class="status_messenger_date medium_title medium_title_2 color_black">
-              90 days ago
+          <!-- /.container -->
+        </div>
+        <!-- /.status_messenger -->
+        <form action="" class="comment__block">
+          <div class="comment_title standart_title standart_title_4 color_black">
+            Comment
+          </div>
+          <input type="text" placeholder="Username" class="form_input" />
+          <textarea placeholder="Comment" name="comment" id="1" class="form_input"></textarea>
+          <input type="submit" value="submit" style='background: #238ceb;' class='standart_btn'>
+        </form>
+        <div class="incidens__block">
+          <div class="incidens_title standart_title standart_title_4 color_black">
+            Past Incidents
+          </div>
+          <div class="incidens_profile">
+            <div class="incidens_profile_date standart_title standart_title_3 color_black">
+              Dec 5, 2020
             </div>
-            <div class="status_messenger_information_line"></div>
-            <div class="status_messenger_uptime medium_title medium_title_2 color_black">
-              100.0 % uptime
+            <div class="incidens_profile_content">
+              <div class="incidens_profile_normal sub_title sub_title_1 color_black">
+                No incidents reported.
+              </div>
             </div>
-            <div class="status_messenger_information_line"></div>
-            <div class="status_messenger_day medium_title medium_title_2 color_black">
-              Today
+          </div>
+          <div class="incidens_profile">
+            <div class="incidens_profile_date standart_title standart_title_3 color_black">
+              Dec 6, 2020
+            </div>
+            <div class="incidens_profile_content">
+              <a href="#" target="_blank" style='color: #ffcb62;'
+                class="incidens_profile_warning medium_title medium_title_3 color_black">
+                Facebook outage affecting Intercom integration
+              </a>
+              <div class="incidens_profile_normal sub_title sub_title_1 color_black">
+                <b>Monitoring</b> - Facebook is experiencing an outage that is affecting some of our customers. It has
+                been preventing them from sending messages from Intercom to Facebook since yesterday. Our engineering
+                team are currently monitoring this situation.
+              </div>
+              <div class="incidens_profile_time sub_title sub_title_0 color_black">
+                Dec 3, 13:53 UTC
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.status_content -->
 
 
-
-    <!-- звичайна полоска -->
-    <div class="status_messenger_profile">
-      <div class="status_messenger_top_info">
-        <div class="status_messenger_title__block">
-          <div class="status_messenger_title standart_title standart_title_3 color_black">
-            Intercom Messenger
-          </div>
-          <div class="status_messenger_question">
-            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="question-circle" role="img"
-              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-              class="svg-inline--fa fa-question-circle fa-w-16 fa-2x">
-              <path fill="currentColor"
-                d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"
-                class=""></path>
-            </svg>
-            <div class="status_messenger_hint sub_title sub_title_0 color_white">
-              app.intercom.com
-            </div>
-          </div>
-        </div>
-        <div class="status_messenger_operational standart_title standart_title_3 color_green">
-          Operational
-        </div>
-      </div>
-      <!-- style: #70ed8c (зелений), #de412c (червоний), #f5cc64 (жовтий) -->
-      <!-- data-date: текстове поле -->
-      <!-- data-status: bad, normal, good -->
-      <!-- data-error-name: текстове поле -->
-      <!-- data-hour: текстове поле -->
-      <!-- data-minute: текстове поле -->
-      <!-- data-title: текстове поле -->
-      <!-- data-text: текстове поле -->
-
-      <div class="status_messenger_indicator__block">
-        <div style='background: #70ed8c;' data-date='22 Oct 2022' data-status='bad' data-error-name='Partialqwe outage'
-          data-error-hour='1' data-error-minute='10' data-title='relateded'
-          data-text='No 1downtime decorded on this day' class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div style='background: #de412c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='bad'
-          class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div style='background: #f5cc64;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='normal'
-          class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div style='background: #70ed8c;' data-error-hour='1' data-error-minute='20' data-error-name='Partial outage'
-          data-text='No downtime decorded on this day' data-title='related' data-date='7 Oct 2020' data-status='good'
-          class="status_messenger_indicator"></div>
-        <div class="status_messenger_popup__block normal">
-          <div class="status_messenger_popup__block_arrow"></div>
-          <div class="status_messenger_popup_date medium_title medium_title_2 color_black">
-            7 Oct 2020
-          </div>
-          <div class="status_messenger_popup_error__block">
-            <div class="status_messenger_popup_error_svg">
-              <img class="status_messenger_popup_error_normal" src="./static/source/img/normal.svg" alt="">
-              <img class="status_messenger_popup_error_bad" src="./static/source/img/bad.svg" alt="">
-            </div>
-            <div class="status_messenger_popup_error_title standart_title standart_title_2 color_black">
-              Partial outage
-            </div>
-            <div class="status_messenger_popup_error_hours__block standart_title standart_title_2 color_black">
-              <span class="status_messenger_popup_error_hours">1</span>
-              hrs
-            </div>
-            <div class="status_messenger_popup_error_minutes__block standart_title standart_title_2 color_black">
-              <span class="status_messenger_popup_error_minutes">20</span>
-              mins
-            </div>
-          </div>
-          <div class="status_messenger_popup_title medium_title medium_title_2 color_black">
-            related
-          </div>
-          <div class="status_messenger_popup_text sub_title sub_title_0 color_black">
-            No downtime decorded on this day lorem100
-          </div>
-        </div>
-        <div class="status_messenger_popup__block_absolute_arrow"></div>
-      </div>
-      <div class="status_messenger_information__block">
-        <div class="status_messenger_date medium_title medium_title_2 color_black">
-          90 days ago
-        </div>
-        <div class="status_messenger_information_line"></div>
-        <div class="status_messenger_uptime medium_title medium_title_2 color_black">
-          100.0 % uptime
-        </div>
-        <div class="status_messenger_information_line"></div>
-        <div class="status_messenger_day medium_title medium_title_2 color_black">
-          Today
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /.status_messenger -->
+  </div>
+  <!-- /.main_container -->
 
   <script src="./static/source/lib/jquery/index.js"></script>
   <script src="./static/source/pages/index/index.js"></script>

@@ -1,7 +1,7 @@
 .status_messenger {
     &_section {
         position: relative;
-        padding: 20vh 0px;
+        padding: 10px 0px;
         max-width: 800px;
         margin: 0 auto;
     }
@@ -302,6 +302,70 @@
 }
 
 
+
+.status_content {
+    margin-top: 60px;
+    padding-bottom: 20px;
+    &_title {
+        padding: 20px;
+    }
+    &_about__block {
+        padding: 50px 20px;
+    }
+    &_about_text {
+        padding: 15px 0;
+    }
+}
+
+.incidens {
+    &__block {
+        padding: 35px 0;
+    }
+    &_title {
+        padding-bottom: 10px;
+    }
+    &_profile {
+        margin-bottom: 30px;
+        width: 100%;
+
+        &_date {
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #637280;
+        }
+        &_warning {
+            display: block;
+            margin: 10px 0;
+        }
+    }
+
+}
+.form_input {
+    outline: none;
+    display: block;
+    width: 100%;
+    border: 1px solid #637280;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    &:focus {
+      border: 1px solid #238ceb;
+    }
+  }
+
+  .comment {
+      &_title {
+        padding-bottom: 10px;
+      }
+      &__block {
+          max-width: 800px;
+          margin: 0 auto;
+
+          .standart_btn {
+
+        }
+      }
+  }
 @media (max-width: 700px) {
     .status_messenger_information_line {
         display: none;
@@ -314,6 +378,27 @@
     }
 }
 
+@media (max-width: 535px) {
+    .header_bottom__block {
+        flex-direction: column;
+    
+    }
+    .container {
+        padding: 0px 10px;
+        width: 100%;
+    }
+    .header_logo_name {
+        padding-top: 10px;
+    }
+    .header_title {
+        padding-bottom: 10px;
+    }
+    .header_top__block {
+        padding: 20px 20px;
+        flex-direction: column;
+    }
+
+}
 @media (max-width: 490px) {
     .status_messenger_popup__block {
         min-width: unset;
@@ -342,5 +427,24 @@
 @media (max-width: 400px) {
     .status_messenger_top_info {
         flex-direction: column;
+    }
+}
+@media (max-width: 380px) {
+    .status_messenger_hint {
+        display: none;
+     }
+    .status_messenger_question:hover .status_messenger_hint {
+        opacity: 1;
+        visibility: visible;
+        left: unset;
+        transform: unset;
+        right: 0;
+        top: -60px;
+        display: block;
+    }
+   
+    .status_messenger_hint::before {
+        left: calc(100% - 40px);
+        transform: unset;
     }
 }

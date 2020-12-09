@@ -15,6 +15,10 @@ main {
     padding: 0px 5%;
     width: 100%;
 }
+.main_container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
 .upper_text {
     text-transform: uppercase;
 }
@@ -36,6 +40,9 @@ main {
     &_0 {
         font-size: 14px;
     }
+    &_1 {
+        font-size: 16px;
+    }
     &_2 {
         font-size: 18px;
     }
@@ -55,6 +62,12 @@ main {
     &_2 {
         font-size: 16px;
     }
+    &_3 {
+        font-size: 20px;
+    }
+    &_4 {
+        font-size: 24px;
+    }
 }
 
 
@@ -71,6 +84,13 @@ main {
     &_3 {
         font-size: 18px;
     }
+    &_4 {
+        font-size: 24px;
+    }
+    &_5 {
+        font-size: 32px;
+    }
+  
   
 }
 
@@ -81,7 +101,9 @@ main {
     font-stretch: normal;
     font-style: normal;
 
-   
+    &_5 {
+        font-size: 32px;
+    }
    
 }
 
@@ -140,4 +162,13 @@ main {
     .standart_title_1 {
         font-size: 15px;
     }
+    .standart_title_5 {
+        font-size: 23px;
+    }
+    .standart_title_4 {
+        font-size: 20px;
+    }
+    
+    
+    
 }
